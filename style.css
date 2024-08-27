@@ -1,0 +1,170 @@
+/* Definição de altura total para HTML, BODY e #home */
+html,
+body,
+#home {
+  height: 100%;
+  overflow-x: hidden;
+}
+
+/* Estilo de fundo para o BODY */
+body {
+  background: url("imagens/capa.png"), url("imagens/ruido.png"),
+    linear-gradient(50deg, #ff0000, #bbab00);
+  background-attachment: fixed;
+}
+
+/* Estilos para a barra de navegação */
+.navbar-transparente {
+  padding: 15px 0px;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 10;
+  position: relative;
+}
+
+.navbar-dark.navbar-nav.nav-item.nav-link {
+  color: rgb(255, 255, 255);
+  font-size: 20px;
+}
+
+.navbar-dark .navbar-toggler {
+  color: rgb(255, 0, 0);
+}
+
+.navbar-collapse {
+  justify-content: flex-end;
+  margin: 20px;
+}
+
+/* Estilo para o divisor na barra de navegação */
+.divisor {
+  width: 1px;
+  background: white;
+  margin: 15px 15px;
+}
+
+/* Estilos para o conteúdo da capa */
+.capa {
+  text-align: center;
+}
+/* Estilos para o texto do slide 1 */
+h1 {
+  font-family: sans-serif;
+  font-weight: 900;
+  margin-bottom: 50px;
+  color: white;
+}
+
+/* Estilos para os botões do slide 1 */
+a.btn.btn-lg.btn-custom {
+  color: white;
+  border-radius: 500px;
+  text-transform: uppercase;
+  transition: background 0.4s, color 0.4s;
+  padding: 15px 20px;
+  margin: 10px;
+  border: solid white 2px;
+}
+
+a.btn.btn-lg.btn-custom.btn-amarelo {
+  border: solid white 2px;
+}
+
+a.btn.btn-lg.btn-custom.btn-amarelo:hover {
+  background-color: #e8d500;
+}
+
+a.btn.btn-lg.btn-custom.btn-vermelho {
+  border: solid white 2px;
+}
+
+a.btn.btn-lg.btn-custom.btn-vermelho:hover {
+  background-color: #de0202;
+}
+
+/* Media queries para diferentes tamanhos de tela */
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+  h1 {
+    font-size: 3em;
+  }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  h1 {
+    font-size: 4em;
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  h1 {
+    font-size: 5em;
+  }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  h1 {
+    font-size: 6em;
+  }
+}
+
+/* Estilos para o primeiro container */
+#servicos {
+  background-color: rgb(220, 220, 220);
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+/* Estilos para os botões do primeiro container */
+a.btn.btn-primary.btn-lg.mt-3 {
+  border-radius: 500px;
+  transition: background 0.4s, color 0.4s;
+  border: black solid 2px;
+  margin-left: 25%;
+}
+
+a.btn.btn-primary.btn-lg.mt-3 {
+  background-color: rgb(220, 220, 220);
+  color: black;
+  border: black solid 2px;
+}
+
+a.btn.btn-primary.btn-lg.mt-3:hover {
+  background: url("imagens/capa.png"), url("imagens/ruido.png"),
+    linear-gradient(50deg, #ff0000, #bbab00);
+}
+
+/* Estilos para o segundo container */
+#recursos h3 {
+  color: white;
+  font-size: 40px;
+}
+
+#recursos p {
+  color: white;
+  font-size: 15px;
+}
+
+/* Estilos para as imagens rotacionadas na segundo container */
+.rotacionar {
+  transform: rotate(30deg);
+  padding-left: 80px;
+}
+
+/* Estilos para o footer */
+footer {
+  background-color: rgb(15, 15, 15);
+  padding: 50px 0px 20px 0px;
+  position: relative;
+}
+
+ul.navbar-nav {
+  color: white;
+}
+
+/* Estilos para o iframe personalizado */
+.custom-iframe {
+  margin-top: 45px;
+}
